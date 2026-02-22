@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-02-19T07:37:28Z",
+  "inputs_sha256": {
+    "xlsx": "64a1f7bcfc871713e5555201d7ce750eefe83f89e510b3e6b5e8c15a0701fd6c"
+  },
+  "script_sha256": "ea2aee221c320b444bd04bf77f668cca8440288b017ba2e4fbb8c82599e7e71e",
+  "abx_codes_sha256": "3d509b76ca0cbe36e9acb2496d6fc282785cbee0b72a715e40f6d9770b8701ac",
+  "analysis_manifest_excluded_from_outputs": true,
+  "outputs": [
+    {
+      "path": "addons_readme_rules.json",
+      "sha256": "8f41d75aa0cef4b76e8bd46232ce092bcd7b7eef55c62809afd3905cb8296d9f"
+    },
+    {
+      "path": "figure_delta_for_hist.png",
+      "sha256": "7f32300c0cc3dae8b34afdb3dc848ec079500fa2b34297e2ca17e59a4df0677c"
+    },
+    {
+      "path": "figure_primary_binary_2x2.png",
+      "sha256": "f3bf8826f52b71ea0cc95835bcb1962595301c1df1c5579db31c5eb4fac22728"
+    },
+    {
+      "path": "flow_counts.csv",
+      "sha256": "a079a3cf3964a76e5c57d24495e56958e4e1d44958fd9a64a5eac7d8831bffd5"
+    },
+    {
+      "path": "models_status.json",
+      "sha256": "70726dc584e868d56dce1d0be5ca7ed2ab00d0f2246e8f8b6fe424e334d122ba"
+    },
+    {
+      "path": "qc_checks.json",
+      "sha256": "71a7d4700378eeb67fea3c88bd4657aa031f9055b95795ef9cad3682786a3bf1"
+    },
+    {
+      "path": "qc_duplicates_dropped.csv",
+      "sha256": "cfb96edfbf64fb61b8de8cefce3493ecbc2aa625580147cf96dc82a49362357b"
+    },
+    {
+      "path": "table2_primary_secondary_endpoints.csv",
+      "sha256": "e06d18a2573a29513f0606ade4c97063ee866287a1010351d92cca52a587a458"
+    },
+    {
+      "path": "table2_secondary_deltas.csv",
+      "sha256": "1b78aee98389c937ba373bdea939099e3e81649794e1d1c4a15388d79607848b"
+    },
+    {
+      "path": "table2b_endpoints_plus.csv",
+      "sha256": "c4369fd28a4c527ee6b986c5e446f72601c7aebb69eadb5d25a07b04bc3e222f"
+    },
+    {
+      "path": "table3_guardrails_components.csv",
+      "sha256": "1aa71db88db499cb3c59696814961945cbadfdbf27f2294f9df6c474271d8edd"
+    },
+    {
+      "path": "table3b_guardrails_composites.csv",
+      "sha256": "e1922403871628ff9f39f49abdf49c5340298693a8ee4a9875b6a360b4f66eda"
+    },
+    {
+      "path": "table4_coverage_paired.csv",
+      "sha256": "05ab3eaeaa008ff2a4dfa122298ea070afaa72b429489623dc2fc7a61ec3a6bb"
+    },
+    {
+      "path": "tableS_aware_binaries.csv",
+      "sha256": "f9f85c7af2def0f13b378199b94ad2dde3707886bca9f9c733c198c59f08ceea"
+    },
+    {
+      "path": "tableS_aware_transitions.csv",
+      "sha256": "8dbe3d4d04c1a67d9ee2a9b2e37cdf31e377a63eaa5947aff8df1a8ebf7126d6"
+    },
+    {
+      "path": "tableS_aware_unmapped_qc.csv",
+      "sha256": "b57d58cdb08827226dd816d451f52ee2a270a50322b19ecf94ce26478bcd4ac8"
+    },
+    {
+      "path": "tableS_concordance_summary.csv",
+      "sha256": "1cf54181329857495694ef8304755b878408ba091ede3da168df5f7ce3958fa8"
+    },
+    {
+      "path": "tableS_guardrail_context_violations.csv",
+      "sha256": "1dbfe1aefcc2e4bbbcb144922031e9bf88f81dd629c014f31a5f5b1491fac510"
+    },
+    {
+      "path": "tableS_micro_evaluable_bias_qc.csv",
+      "sha256": "d9c166e360cdc3440ac97413a57cc68c10a28e52dda2cfcaea974714e504d917"
+    },
+    {
+      "path": "tableS_micro_tradeoff_success.csv",
+      "sha256": "8747b154d59cb18e57bf55f871d217f7a0e024d192b9701bdd7eac4074447808"
+    },
+    {
+      "path": "tableS_models_missingness.csv",
+      "sha256": "761324a70ca21cef04f3476fd495ce4afef5821a62b38880df8715537996e304"
+    },
+    {
+      "path": "tableS_predictors_of_ai_improvement_guardrail.csv",
+      "sha256": "9adc6489ee9cd74802f787c3bac2b260fb1ae75396ce60d749256a4df1446c70"
+    },
+    {
+      "path": "tableS_predictors_of_nonzero_delta_guardrail.csv",
+      "sha256": "66ce3e2eb76ed75727f7426b78c7a41c357d0d31d7819f1ae27ab5d5b1c266fd"
+    },
+    {
+      "path": "tableS_subgroup_lowrisk_guardrails.csv",
+      "sha256": "c40b5de2131fb5e08c7a387c5e4da8abb6629572f73b05a5b5f2b4ebcac29aa3"
+    }
+  ],
+  "runtime": {
+    "python": "3.14.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6"
+  },
+  "config": {
+    "primary_binary_clin_col": "clin_any_violation",
+    "primary_binary_ai_col": "ai_any_violation",
+    "key_secondary_delta_col": "delta_guardrail_penalty_context",
+    "delta_for_hist_col": "delta_guardrail_penalty_context",
+    "delta_for_models_col": "delta_guardrail_penalty_context",
+    "n_boot": 5000,
+    "seed": 7,
+    "models": true,
+    "clin_cov_col": "clin_empiric_active_vs_index",
+    "ai_cov_col": "ai_empiric_active_vs_index",
+    "admitting_ward_col": "admitting_ward",
+    "icu_transfer_24h_col": "icu_transfer_24h",
+    "fail_on_icu_mismatch": false
+  }
+}

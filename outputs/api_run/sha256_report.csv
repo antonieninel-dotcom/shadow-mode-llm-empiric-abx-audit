@@ -1,0 +1,11 @@
+file_path,file_name,status_regarding_PHI,file_size_bytes,sha256
+C:\Users\x\Desktop\run_bundle_manifest\abx_codes.csv,abx_codes.csv,file_present,1947,e51373beabf0380842b0f0e37485f6c0323c49fbb6ccbde70baa3102a920348c
+C:\Users\x\Desktop\run_bundle_manifest\ai_results_for_sheets.csv,ai_results_for_sheets.csv,file_deleted,358597,0a86439bbce5e312ac5dbab9d5a4fa4611e3b370b8a08031dc7d35b880f380a1
+C:\Users\x\Desktop\run_bundle_manifest\case_input.csv,case_input.csv,file_deleted,2588122,7aba7e25ebaae4a9a97c02718383c3146be4f61e85a82ca7d756cb830509bb4f
+C:\Users\x\Desktop\run_bundle_manifest\epi_script.py,epi_script.py,file_present_see_folder: shadow-mode-llm-empiric-abx-audit\public\analysis,80932,0b2774f74e7efef6a2bc41c722a40334ae2551f71130c4105a669714ff62ee62
+C:\Users\x\Desktop\run_bundle_manifest\manifest.json,manifest.json,file_deleted,9134,c8ddd6087ccb5b95049cf095148dfe09c0c9e27d5c0a4a661d723865ba63884b
+C:\Users\x\Desktop\run_bundle_manifest\requests_ledger.jsonl,requests_ledger.jsonl,file_present,153896,037c79d0cdb0156f98b57a5bda9887d53f8376734b8663732be17d972c3980a3
+C:\Users\x\Desktop\run_bundle_manifest\responses_raw.jsonl,responses_raw.jsonl,file_deleted,458676,b956f8c9ad18fa4803be9d232a246ab730c60009c647587ebb261521f102dfef
+C:\Users\x\Desktop\run_bundle_manifest\run_api_500.py,run_api_500.py,file_present_see_folder: shadow-mode-llm-empiric-abx-audit\public\analysis,19063,754c85b7b3acef1030d293986d026010ed6b5d4be8293fa635bb096f90105b66
+C:\Users\x\Desktop\run_bundle_manifest\sha256.py,sha256.py,file_present_see_folder: shadow-mode-llm-empiric-abx-audit\public\analysis,1563,18c8d580f345041f62d1422307c5857eee6783b44e9f66782d4d8e423387cef9
+C:\Users\x\Desktop\run_bundle_manifest\sha256_report.csv,sha256_report.csv,file_present,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

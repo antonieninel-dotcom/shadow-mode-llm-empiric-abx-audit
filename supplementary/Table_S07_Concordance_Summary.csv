@@ -1,0 +1,10 @@
+metric,n,pct
+Exact identical regimen set,57,11.6
+Discordant (not identical set),436,88.4
+Same primary agent (drug_1),137,27.8
+Any overlap (AI∩Clin>=1),148,30.0
+No overlap (AI∩Clin=0),345,70.0
+Agreement label: No overlap,345,70.0
+Agreement label: Same primary agent,80,16.2
+Agreement label: Identical regimen,57,11.6
+Agreement label: Partial overlap,11,2.2

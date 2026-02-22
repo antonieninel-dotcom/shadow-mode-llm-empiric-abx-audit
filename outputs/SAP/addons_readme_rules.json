@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-02-19T07:37:27Z",
+  "merge_policy": "ENDPOINTS WINS: duplicate columns dropped from data before merge; endpoints kept as truth.",
+  "duplicate_columns_dropped_from_data": [
+    "ai_anti_mrsa_any",
+    "ai_antipseudomonal_any",
+    "ai_carbapenem_any",
+    "ai_empiric_active_vs_index",
+    "clin_anti_mrsa_any",
+    "clin_antipseudomonal_any",
+    "clin_carbapenem_any",
+    "clin_empiric_active_vs_index"
+  ],
+  "primary_endpoint": {
+    "name": "Any contextual guardrail violation",
+    "type": "binary_paired",
+    "clin_col": "clin_any_violation",
+    "ai_col": "ai_any_violation",
+    "effect_direction": "AI lower is favorable"
+  },
+  "key_secondary_endpoint": {
+    "name": "Δ contextual guardrail penalty score (AI-Clin)",
+    "col": "delta_guardrail_penalty_context",
+    "effect_direction": "negative favors AI"
+  },
+  "bootstrap": {
+    "n_boot": 5000,
+    "seed": 7
+  },
+  "contextual_guardrails": {
+    "SEVERE": [
+      "admitting_ward == 'ICU'",
+      "septic_shock_documented == 1",
+      "vasopressors_any == 1",
+      "mechanical_ventilation_any == 1",
+      "respiratory_failure_documented == 1",
+      "NOTE: icu_transfer_any excluded (may be >24h)."
+    ],
+    "MDR_RISK": [
+      "prior_esbl_cre_vre == 1",
+      "abx_last_90d == 1",
+      "hospitalization_last_90d == 1",
+      "ltc_facility_resident == 1",
+      "acquisition_text == 'healthcare-associated'",
+      "EXCLUDED: mdr_risk_text (free-text/composite)."
+    ],
+    "CARB_JUSTIFIED": [
+      "prior_esbl_cre_vre == 1 OR (MDR_RISK==1 AND SEVERE==1) [legacy preserved]"
+    ],
+    "APS_JUSTIFIED": [
+      "SEVERE==1 OR MDR_RISK==1"
+    ],
+    "MRSA_JUSTIFIED": [
+      "prior_mrsa_colonization==1"
+    ],
+    "penalty_weights": {
+      "carbapenem": 2,
+      "antipseudomonal": 1,
+      "anti_mrsa": 1
+    },
+    "delta_definition": "AI - Clinician (negative favors AI)",
+    "primary_binary_definition": "any_violation = (carb_violation OR aps_violation OR mrsa_violation)"
+  },
+  "exploratory_models": {
+    "enabled_with_flag": "--models",
+    "delta_used": "delta_guardrail_penalty_context",
+    "outcomes": [
+      "nonzero_delta_guardrail = 1[delta!=0]",
+      "ai_improved_guardrail = 1[delta<0]"
+    ],
+    "policy": [
+      "Try multivariable Logit with HC3 robust SE.",
+      "If MV fails (non-convergence / separation), fallback to univariable Logit HC3 per predictor.",
+      "If UV Logit has perfect separation and predictor is binary, compute Fisher exact OR + CI (Haldane-Anscombe).",
+      "Complete-case analysis on outcome + predictors; missingness exported."
+    ],
+    "collinearity_hygiene": [
+      "If SEVERE is included, omit its component markers in MV.",
+      "If MDR_RISK is included, omit its component markers and acquisition_text in MV."
+    ]
+  },
+  "aware_addons": {
+    "aware_ran": true,
+    "aware_col": "aware_group",
+    "mapping_size": 64,
+    "total_codes_clin_n": 630,
+    "unmapped_codes_clin_n": 0,
+    "total_codes_ai_n": 751,
+    "unmapped_codes_ai_n": 0,
+    "unmapped_rate_clin": 0.0,
+    "unmapped_rate_ai": 0.0
+  }
+}

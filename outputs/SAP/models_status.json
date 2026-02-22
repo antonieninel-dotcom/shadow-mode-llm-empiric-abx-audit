@@ -1,0 +1,13 @@
+{
+  "ran": true,
+  "predictors_used": [
+    "admitting_ward",
+    "SEVERE",
+    "MDR_RISK",
+    "age_years",
+    "sex",
+    "viral_screening_pozitive",
+    "home_abx_before_hosp"
+  ],
+  "delta_used": "delta_guardrail_penalty_context"
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "check": "n_rows_merged",
+    "value": 493
+  },
+  {
+    "check": "duplicate_columns_dropped_from_data_n",
+    "value": 8
+  },
+  {
+    "check": "primary_binary_cols",
+    "value": "clin_any_violation vs ai_any_violation"
+  },
+  {
+    "check": "primary_binary_present",
+    "value": true
+  },
+  {
+    "check": "key_secondary_delta_col",
+    "value": "delta_guardrail_penalty_context"
+  },
+  {
+    "check": "mdr_text_excluded_from_logic",
+    "value": "mdr_risk_text"
+  },
+  {
+    "check": "ward_vs_icu_transfer_24h_mismatch_n",
+    "value": 0
+  },
+  {
+    "check": "key_secondary_delta_nonmissing_n",
+    "value": 493
+  },
+  {
+    "check": "key_secondary_delta_improved_n_delta_lt0",
+    "value": 79
+  },
+  {
+    "check": "key_secondary_delta_worsened_n_delta_gt0",
+    "value": 16
+  },
+  {
+    "check": "key_secondary_delta_tied_n_delta_eq0",
+    "value": 398
+  },
+  {
+    "check": "delta_for_hist_nonmissing_n",
+    "value": 493
+  },
+  {
+    "check": "delta_for_hist_improved_n_delta_lt0",
+    "value": 79
+  },
+  {
+    "check": "delta_for_hist_worsened_n_delta_gt0",
+    "value": 16
+  },
+  {
+    "check": "delta_for_hist_tied_n_delta_eq0",
+    "value": 398
+  },
+  {
+    "check": "delta_for_models_nonmissing_n",
+    "value": 493
+  },
+  {
+    "check": "delta_for_models_improved_n_delta_lt0",
+    "value": 79
+  },
+  {
+    "check": "delta_for_models_worsened_n_delta_gt0",
+    "value": 16
+  },
+  {
+    "check": "delta_for_models_tied_n_delta_eq0",
+    "value": 398
+  }
+]

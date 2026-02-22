@@ -1,0 +1,19 @@
+outcome,variable,missing_n,n_before_dropna,n_complete_case,dropped_n,events,note
+ai_improved_guardrail,MDR_RISK,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,SEVERE,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,__MODEL__,0,493,493,0,79,complete-case sample used for modeling
+ai_improved_guardrail,admitting_ward_IM,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,age_years,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,ai_improved_guardrail,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,home_abx_before_hosp,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,sex_male,0,,,,,missing counted before complete-case drop
+ai_improved_guardrail,viral_screening_pozitive,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,MDR_RISK,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,SEVERE,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,__MODEL__,0,493,493,0,95,complete-case sample used for modeling
+nonzero_delta_guardrail,admitting_ward_IM,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,age_years,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,home_abx_before_hosp,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,nonzero_delta_guardrail,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,sex_male,0,,,,,missing counted before complete-case drop
+nonzero_delta_guardrail,viral_screening_pozitive,0,,,,,missing counted before complete-case drop

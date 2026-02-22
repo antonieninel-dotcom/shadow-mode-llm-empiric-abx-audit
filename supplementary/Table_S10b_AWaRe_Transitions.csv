@@ -1,0 +1,6 @@
+clin_category,No antibiotic,Access-only,Watch-only,Access+Watch,Any Reserve
+No antibiotic,0,0,0,0,0
+Access-only,1,0,50,0,0
+Watch-only,4,8,378,0,0
+Access+Watch,0,1,29,0,0
+Any Reserve,0,0,22,0,0

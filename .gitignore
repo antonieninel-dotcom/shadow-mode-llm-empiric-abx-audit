@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+.ipynb_checkpoints/
+
+# Prevent accidental PHI upload
+raw_data*
+*ehr*
+*patient*
+*phi*
+*identifiable*
+requests_ledger*.jsonl
+responses_raw*.jsonl
+
+# Prevent accidental PHI upload (project-specific)
+raw_data*
+*screening_log*
+*admission_level*
+*crt_id*
+*patient_level*
+prompts_raw*
+responses_raw*
+requests_ledger*.jsonl
+responses_raw*.jsonl

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "Shadow-mode LLM vs clinician empiric antibiotics — public audit bundle (non-PHI)"
+authors:
+  - family-names: "Antonie"
+    given-names: "Ninel Iacobus"
+date-released: "2026-02-22"
+license: "MIT"
+repository-code: "https://github.com/<YOUR_GITHUB_USERNAME>/shadow-mode-llm-empiric-abx-audit"
+abstract: >
+  Derived, non-identifiable audit artifacts for a retrospective paired shadow-mode comparison
+  of LLM-recommended vs clinician empiric antibiotic regimens within the first 24 hours of admission.
+keywords:
+  - antimicrobial stewardship
+  - large language models
+  - reproducible research
+  - internal medicine
+  - retrospective study

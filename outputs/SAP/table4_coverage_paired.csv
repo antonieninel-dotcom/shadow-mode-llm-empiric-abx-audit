@@ -1,0 +1,2 @@
+n,n00,n01,n10,n11,rd,matched_or,matched_or_ci_lo,matched_or_ci_hi,p_mcnemar_exact,coverage_definition,n_evaluable
+158.0,38.0,23.0,10.0,87.0,0.08227848101265822,2.238095238095238,1.0811964894175545,4.632895448525725,0.03508203336969018,clin_empiric_active_vs_index vs ai_empiric_active_vs_index (9 -> NaN; evaluable pairs only),158.0
