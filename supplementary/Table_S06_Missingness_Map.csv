@@ -1,0 +1,43 @@
+Domain,Variable,Source column,Total N,Missing n,Missing %,Not applicable / nonevaluable n,Not applicable / nonevaluable %,Applicable N,Notes
+Demographics,Age (years),data.age_years,493,0,0,0,0,493,—
+Demographics,Sex (female/male),data.sex,493,0,0,0,0,493,—
+Baseline / hospitalization,Cohort year (2020–2024),data.cohort_year,493,0,0,0,0,493,—
+Baseline / hospitalization,Length of stay (days),data.los_days,493,0,0,0,0,493,—
+Baseline / hospitalization,Admitting ward/service,data.admitting_ward,493,0,0,0,0,493,—
+Baseline / hospitalization,Acquisition setting,data.acquisition_setting,493,0,0,0,0,493,—
+Baseline / hospitalization,Index syndrome code,data.syndrome_code,493,0,0,0,0,493,—
+Severity / support (≤24 h),Sepsis documented,data.sepsis_documented,493,0,0,0,0,493,Structured flag
+Severity / support (≤24 h),Septic shock documented,data.septic_shock_documented,493,0,0,0,0,493,Structured flag
+Severity / support (≤24 h),Respiratory failure documented,data.respiratory_failure_documented,493,0,0,0,0,493,Structured flag
+Severity / support (≤24 h),Mechanical ventilation within 24 h,data.mechanical_ventilation_24h,493,0,0,0,0,493,Early support marker
+Severity / support (≤24 h),Vasopressors within 24 h,data.vasopressors_24h,493,0,0,0,0,493,Early support marker
+Severity / support (≤24 h),ICU transfer within 24 h,data.icu_transfer_24h,493,0,0,0,0,493,Early support marker
+Prior exposure / MDR-risk proxies,Antibiotics in prior 90 days,data.abx_last_90d,493,0,0,0,0,493,Outpatient history may be unavailable
+Prior exposure / MDR-risk proxies,Hospitalization in prior 90 days,data.hospitalization_last_90d,493,0,0,0,0,493,External admissions may be unavailable
+Prior exposure / MDR-risk proxies,Long-term care facility resident,data.ltc_facility_resident,493,0,0,0,0,493,—
+Prior exposure / MDR-risk proxies,Prior MRSA colonization/infection,data.prior_mrsa_colonization,493,0,0,0,0,493,Documented microbiology history
+Prior exposure / MDR-risk proxies,Prior ESBL/CRE/VRE history,data.prior_esbl_cre_vre,493,0,0,0,0,493,Documented microbiology history
+Prior exposure / MDR-risk proxies,Home antibiotics before admission,data.home_abx_before_hosp,493,0,0,0,0,493,—
+Comorbidities,Hypertension,data.htn_any,493,0,0,0,0,493,—
+Comorbidities,Diabetes mellitus,data.dm_any,493,0,0,0,0,493,—
+Comorbidities,COPD,data.copd_any,493,0,0,0,0,493,—
+Comorbidities,Chronic kidney disease,data.ckd_any,493,0,0,0,0,493,—
+Comorbidities,Congestive heart failure,data.chf_any,493,0,0,0,0,493,—
+Comorbidities,Atrial fibrillation,data.afib_any,493,0,0,0,0,493,—
+Comorbidities,Prior stroke,data.stroke_any,493,0,0,0,0,493,—
+Comorbidities,Cirrhosis,data.cirrhosis_any,493,0,0,0,0,493,—
+Comorbidities,Malignancy,data.malignancy_any,493,0,0,0,0,493,—
+Comorbidities,Immunosuppression,data.immunosuppression_any,493,0,0,0,0,493,—
+Admission labs,WBC (10^9/L),data.wbc_10e9_l,493,1,0.2,0,0,492,—
+Admission labs,CRP (mg/L),data.crp_mg_l,493,132,26.8,0,0,361,—
+Admission labs,Procalcitonin (ng/mL),data.pct_ng_ml,493,463,93.9,0,0,30,—
+Admission labs,Platelets (10^9/L),data.platelets_10e9_l,493,1,0.2,0,0,492,—
+Admission labs,Creatinine (mg/dL),data.creatinine_mg_dl,493,3,0.6,0,0,490,—
+Admission labs,Lactate (mmol/L),data.lactate_mmol_l,493,345,70,0,0,148,—
+Derived outcomes (paired deltas),Δ contextual guardrail penalty (LLM − clinician),endpoints.delta_guardrail_penalty,493,0,0,0,0,493,Key secondary; computed for all paired admissions; many ties
+Derived outcomes (paired deltas),"Δ empiric antibiotic cost 24 h (LLM − clinician), EUR",endpoints.delta_empiric_cost_24h_eur_median_prices,493,0,0,0,0,493,Drug acquisition only; fixed unit prices; computed for all paired admissions
+Derived outcomes (paired deltas),"Δ empiric antibiotic cost 72 h (continued-therapy subset), EUR",endpoints.delta_empiric_cost_72h_eur_median_prices_true,493,0,0,170,34.5,323,Defined only if empiric therapy continued to 72 h; outside subset = not applicable
+Derived outcomes (paired deltas),Δ DDD/24 h (LLM − clinician),endpoints.ΔDDD/24h,493,0,0,0,0,493,ATC/DDD-based; computed for all paired admissions
+Derived outcomes (paired deltas),Δ AWaRe mean score (LLM − clinician),endpoints.delta_aware_mean,493,0,0,0,0,493,Derived from regimen-level AWaRe mapping; supplementary
+Derived outcomes (paired deltas),Δ AWaRe max score (LLM − clinician),endpoints.delta_aware_max,493,0,0,0,0,493,Derived from regimen-level AWaRe mapping; supplementary
+Microbiology (paired coverage),Microbiology-evaluable paired subset for active coverage endpoint,endpoints.clin_empiric_active_vs_index + endpoints.ai_empiric_active_vs_index,493,0,0,335,68,158,Nonevaluable = no culture and/or no interpretable susceptibility allowing paired classification; 9 indicates nonevaluable (not missing)

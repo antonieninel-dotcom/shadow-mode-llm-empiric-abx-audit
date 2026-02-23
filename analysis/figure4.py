@@ -35,8 +35,26 @@ for k in order:
 
 df = pd.DataFrame(rows)
 
-def p_fmt(p):
-    return "<0.001" if p < 0.001 else f"{p:.3f}"
+def _superscript_int(n: int) -> str:
+    sup = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")
+    return str(n).translate(sup)
+
+def p_fmt(p: float) -> str:
+    """
+    Always scientific notation for p-values:
+    e.g. 6.61×10⁻³, 2.83×10⁻⁶
+    """
+    if p is None or (isinstance(p, float) and np.isnan(p)):
+        return "NA"
+
+    if p == 0:
+        # defensive: exact zero only if underflow
+        return "<1×10" + _superscript_int(-300)
+
+    s = f"{p:.2e}"          # e.g. '6.61e-03'
+    mant, exp = s.split("e")
+    exp_i = int(exp)
+    return f"{mant}×10{_superscript_int(exp_i)}"
 
 # -----------------------------
 # Figure (PNG-optimized)
@@ -106,7 +124,7 @@ for i, row in enumerate(df.itertuples(index=False)):
 # -----------------------------
 fig.text(
     0.02, 0.015,
-    "n10 = Clin=1/AI=0; n01 = Clin=0/AI=1. Secondary endpoints: multiplicity caution.",
+    "n10 = Clin=1/LLM=0; n01 = Clin=0/LLM=1. Secondary endpoints: multiplicity caution.",
     fontsize=9, 
 )
 

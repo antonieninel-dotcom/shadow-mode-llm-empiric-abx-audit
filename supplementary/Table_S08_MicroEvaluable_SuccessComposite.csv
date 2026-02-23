@@ -1,2 +1,2 @@
-n,n00,n01,n10,n11,rd,matched_or,matched_or_ci_lo,matched_or_ci_hi,p_mcnemar_exact,endpoint,n_evaluable_pairs,clin_success_rate,ai_success_rate,clin_active_rate,ai_active_rate,clin_any_violation_rate,ai_any_violation_rate
-158.0,48.0,45.0,11.0,54.0,0.21518987341772153,3.9565217391304346,2.071893066740221,7.5554402509975,5.37831811014966e-06,Micro-evaluable success: active AND no contextual violation,158.0,0.41139240506329117,0.6265822784810127,0.6139240506329114,0.6962025316455697,0.25316455696202533,0.0949367088607595
+n,n00,n01,n10,n11,rd,matched_or,matched_or_ci_lo,matched_or_ci_hi,p_mcnemar_exact,endpoint,n_evaluable_pairs,clin_success_rate,llm_success_rate,clin_active_rate,llm_active_rate,clin_any_violation_rate,llm_any_violation_rate
+158,48,45,11,54,0.215189873,3.956521739,2.071893067,7.555440251,5.38E-06,Micro-evaluable success: active AND no contextual violation,158,0.411392405,0.626582278,0.613924051,0.696202532,0.253164557,0.094936709

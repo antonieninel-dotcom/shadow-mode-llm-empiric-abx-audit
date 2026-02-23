@@ -1,0 +1,7 @@
+Endpoint (LLM − clinician),Analysis population,N,Median,IQR (Q1–Q3),Bootstrap median 95% CI,Wilcoxon signed-rank p,Sign test p (non-tied pairs),Holm-adjusted p (m=6),Holm family size (m),Notes
+Δ contextual guardrail penalty (LLM − clinician) [key secondary],Full cohort (N=493),493,0,0 to 0,0 to 0,9.48e-11,3.47e-11,4.74e-10,6,Key secondary; ties handled per prespecification.
+"Δ empiric antibiotic cost at 24 h (LLM − clinician), EUR",Full cohort (N=493),493,-1.434755,-9.795373 to 0.567802,-4.094507 to -0.067458,2.80e-13,6.41e-7,1.68e-12,6,Prespecified paired-delta family member.
+"Δ empiric antibiotic cost at 72 h (LLM − clinician), EUR (continued-therapy subset)",72h continued-therapy subset (N=323),323,-9.681724,-23.922434 to 1.703405,-13.434685 to -0.669665,2.34e-10,2.59e-6,9.36e-10,6,Prespecified paired-delta family member.
+Δ AWaRe mean score (LLM − clinician),Full cohort (N=493),493,0,0 to 0,0 to 0,4.01e-5,7.52e-5,0.0001,6,Prespecified paired-delta family member.
+Δ AWaRe max score (LLM − clinician),Full cohort (N=493),493,0,0 to 0,0 to 0,0.1439,0.1606,0.1696,6,Prespecified paired-delta family member.
+Δ DDD/24 h (LLM − clinician),Full cohort (N=493),493,0,-0.5 to 1,0 to 0.142857,0.0848,0.0112,0.1696,6,Prespecified paired-delta family member.

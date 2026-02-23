@@ -7,7 +7,7 @@ authors:
     given-names: "Ninel Iacobus"
 date-released: "2026-02-22"
 license: "MIT"
-repository-code: "https://github.com/<YOUR_GITHUB_USERNAME>/shadow-mode-llm-empiric-abx-audit"
+repository-code: "https://github.com/antonieninel-dotcom/shadow-mode-llm-empiric-abx-audit"
 abstract: >
   Derived, non-identifiable audit artifacts for a retrospective paired shadow-mode comparison
   of LLM-recommended vs clinician empiric antibiotic regimens within the first 24 hours of admission.
